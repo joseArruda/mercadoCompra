@@ -38,8 +38,8 @@ header{
 
 .logo-img img{
     width: auto;
-    height: 3rem;
-    padding: 1rem 0.5rem 0 0.5rem;
+    height: 4rem;
+    padding: 0.5rem 0 0 0.5rem;
 }
 
 .search-bar{
@@ -566,7 +566,7 @@ header{
     position: relative;
     top: 60px;
     left: 2rem;
-    width: 150px;
+    width: 50px;
 }
 
 .container-filmes .btn-mercado-livre img{
@@ -637,6 +637,7 @@ header{
     align-items: center;
     max-width: 1200px;
     justify-content: center;
+    gap: 0.5rem;
     flex-wrap: wrap;
     padding: 0 0rem;
     margin: 0 auto;
@@ -919,21 +920,30 @@ header{
 }
 
 @media (max-width: 420px){
+    .logo-img img{
+    width: auto;
+    height: 2rem;
+    padding: 1.5rem 0 0 0.5rem;
+    }
+    
     .search-bar{
-        width: 0;
-        height: 0;
+        width: 50px;
     }
 
     .search-bar input[type="text"]{
-        display: none;
+        width: 50px;
     }
 
     .search-bar img{
         background-color: var(--primaria);
         border-radius: 35px;
         padding: 2px;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon{
+        display: none;
     }
 
     .slider .slides .slide img{
