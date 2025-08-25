@@ -93,6 +93,9 @@ header{
 }
 .menu h2{
     position: absolute;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
     z-index: 98;
     font-size: 13px;
     color: red;
