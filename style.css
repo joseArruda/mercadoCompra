@@ -88,10 +88,16 @@ header{
 }
 
 /* Menu Lateral (Hambúrguer) */
+.menu{
+    height: 0;
+}
 .menu h2{
-    text-align: center;
+    position: absolute;
+    z-index: 98;
     font-size: 13px;
     color: red;
+    background-color: var(--vidro);
+    margin-top: 32rem;
 }
 
 .menu .menu-lines{
@@ -222,8 +228,8 @@ header{
     display: flex;
     align-items: center;
     margin-left: -300px;
-    top: 10rem;
-    left: 4.2rem;
+    top: 9.5rem;
+    left: 1rem;
     z-index: 99;
     padding: 0.1rem 1rem;
     border: 1px solid #2d3570;
