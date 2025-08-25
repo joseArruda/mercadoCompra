@@ -1,7 +1,7 @@
 :root{
-    --primaria: #ffe600;
-    --secundaria: #2d3570;
-    --grey: #dcdcdc;
+    --primaria: #fffb00;
+    --secundaria: #160921;
+    --grey: #f5f5f5;
     --bg: rgb(235, 235, 235);
     --border: 1px solid #dcdcdc;
     --white: #fff;
@@ -20,6 +20,7 @@
 body{
     background-color: rgb(235, 235, 235);
     font-family: "Open Sans", sans-serif;
+    width: 100%;
 }
 
 /* cabeçalho */
@@ -87,6 +88,9 @@ header{
 }
 
 /* Menu Lateral (Hambúrguer) */
+.menu{
+    height: 0;
+}
 
 .menu .menu-lines{
     position: absolute;
@@ -244,7 +248,7 @@ header{
 
 .slider{
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     height: 500px;
     overflow: hidden;
     margin-bottom: 5rem;
@@ -431,7 +435,7 @@ header{
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .teste-meli{
@@ -440,7 +444,7 @@ header{
 }
 
 .meli .teste-meli .cabecalho-container-meli{
-    background: linear-gradient(90deg, #5a238d, #aa1192);
+    background: linear-gradient(90deg, #722731, #bd1b43);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
@@ -466,7 +470,7 @@ header{
 .meli .teste-meli .cabecalho-meli .assine-meli img{
     width: 3.5rem;
     height: auto;
-    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 .meli .teste-meli .cabecalho-meli .assine-meli p{
@@ -781,7 +785,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #fff;;
 }
@@ -921,25 +925,14 @@ header{
 
 @media (max-width: 420px){
     .logo-img img{
-    width: auto;
     height: 2rem;
-    padding: 1.5rem 0 0 0.5rem;
+    margin: 0;
+    padding: 0;
     }
-    
+
     .search-bar{
-        width: 50px;
-    }
-
-    .search-bar input[type="text"]{
-        width: 50px;
-    }
-
-    .search-bar img{
-        background-color: var(--primaria);
-        border-radius: 35px;
-        padding: 2px;
-        width: 30px;
-        height: 30px;
+        margin: 20px 15px 0 0;
+        width: 12rem;
     }
 
     .icon{
@@ -947,7 +940,6 @@ header{
     }
 
     .slider .slides .slide img{
-        object-fit: cover;
         object-position: center;
     }
 
@@ -961,11 +953,11 @@ header{
 
 
     .secao-filmes .image-filmes .teste-series-filmes .filme-serie{
-        width: 250px;
+        width: 90%;
     }
 
     .secao-filmes .image-filmes .teste-series-filmes .filme-serie iframe{
-        width: 250px;
+        width: 100%;
     }
 
     .informacoes-meli .icons-meli .beneficios p{
@@ -974,5 +966,5 @@ header{
     padding: 0 0.5rem ;
     font-weight: 400;
     font-size: 13px;
-}
+    }
 }
